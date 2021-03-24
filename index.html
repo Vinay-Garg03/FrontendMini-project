@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Mini Project Frontend</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Details Form</h2>
+            <hr >
+            <div id="form">
+                <form>
+                    <div class="form-group">
+                        <label for="nme">Name:</label>
+                        <input id="nme" class="form-control" type="text" placeholder="Enter your name..." minlength="3">
+                        <div class="alert" id="w1">Name must be of minimum 3 length</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phn">Mob. No. :</label>
+                        <input id="phn" class="form-control" type="number" placeholder="Enter your Mobile Number..." min="10" >
+                        <div class="alert" id="w2">Mob. No. must be of length 10</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Email ID:</label>
+                        <input id="mail" type="email" class="form-control" placeholder="Enter your email ID..." >
+                        <div class="alert" id="w3">Enter a valid email id</div>
+                    </div>
+                   
+                </form>
+                <div>
+                    <button id="submit" value="Submit" class="btn btn-warning" onclick="formValidate()">Submit</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="details">
+                <div class="col-sm-3">Name</div>
+                <div class="col-sm-3">Mob. No.</div>
+                <div class="col-sm-3">Email ID</div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div id="output">
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
